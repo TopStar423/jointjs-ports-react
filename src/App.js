@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Diagram from './components/Diagram';
 import InputPorts from './components/InputPorts';
+import 'jointjs/dist/joint.css';
 import './App.scss';
 
 export default class App extends Component {
