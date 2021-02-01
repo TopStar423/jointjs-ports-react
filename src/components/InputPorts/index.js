@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './styles.scss';
 
 export default class InputPorts extends Component {
@@ -72,4 +73,8 @@ export default class InputPorts extends Component {
             </div>
         )
     }
+}
+
+InputPorts.propTypes = {
+    onAddPort: PropTypes.func.isRequired
 }

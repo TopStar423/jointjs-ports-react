@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import * as joint from 'jointjs';
 import './style.scss';
 
@@ -69,4 +70,9 @@ export default class Diagram extends Component {
             </div>
         )
     }
+}
+
+Diagram.propTypes = {
+    inPorts: PropTypes.arrayOf(PropTypes.string),
+    outPorts: PropTypes.arrayOf(PropTypes.string)
 }
